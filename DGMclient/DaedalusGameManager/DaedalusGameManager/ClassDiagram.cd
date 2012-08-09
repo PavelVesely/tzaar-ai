@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="See the GameServer class diagram.">
+    <Position X="3.07" Y="2.935" Height="0.481" Width="1.351" />
+  </Comment>
+  <Comment CommentText="This class is a proxy for a PropertyGrid to manipulate the values in the static game manager config class (below).">
+    <Position X="8.59" Y="1.543" Height="0.983" Width="1.623" />
+  </Comment>
+  <Comment CommentText="The game choice class holds info about the currently loaded game.  It also contains the index (within the 'Games' array) of the default game that is loaded when the game manager starts up.">
+    <Position X="3.367" Y="4" Height="1.519" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The game configuration form is fed a property grid to display by the currently load game, if that game implements IGameConfig.">
+    <Position X="5.763" Y="4.977" Height="0.638" Width="2.899" />
+  </Comment>
+  <Comment CommentText="This static class contains the current game manager settings.">
+    <Position X="8.085" Y="2.829" Height="0.885" Width="1.185" />
+  </Comment>
+  <Comment CommentText="The game manager's configuration form displays a property grid that controls the game manager's configuration.">
+    <Position X="8.827" Y="0.5" Height="0.809" Width="2.029" />
+  </Comment>
+  <Comment CommentText="The game server notifies the game manager form of events, e.g., new moves, log messages, errors, etc.">
+    <Position X="2.377" Y="1.907" Height="0.639" Width="2.27" />
+  </Comment>
+  <Comment CommentText="The manager form itself handles interaction with the user, and carries out their commands.">
+    <Position X="4.059" Y="0.5" Height="1.191" Width="1.218" />
+  </Comment>
+  <Class Name="DaedalusGameManager.DaedalusGameManagerForm" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>BQCAIAIQIiAIIQAhCVKTQQEGQAgJAQCAACgKgJBEAMg=</HashCode>
+      <FileName>DaedalusGameManagerForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameServer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGameManager.GameServer" Collapsed="true">
+    <Position X="0.5" Y="3" Width="2.5" />
+    <Members>
+      <Method Name="CallEvent_LogMessage" Hidden="true" />
+      <Method Name="CallEvent_ServerStopped" Hidden="true" />
+      <Method Name="CallEvent_Update" Hidden="true" />
+      <Field Name="client1Id" Hidden="true" />
+      <Field Name="client2Id" Hidden="true" />
+      <Field Name="connectionCount" Hidden="true" />
+      <Method Name="EndGame" Hidden="true" />
+      <Field Name="gameInProgress" Hidden="true" />
+      <Method Name="GetClientIdFromPlayer" Hidden="true" />
+      <Method Name="GetOtherClientId" Hidden="true" />
+      <Method Name="GetPlayerFromClientId" Hidden="true" />
+      <Field Name="logic" Hidden="true" />
+      <Method Name="ProcessNewMessageFromClient" Hidden="true" />
+      <Method Name="ProcessNewMoveMessage" Hidden="true" />
+      <Method Name="ServerEventHandler" Hidden="true" />
+      <Field Name="shutDown" Hidden="true" />
+      <Method Name="StartGame" Hidden="true" />
+      <Method Name="StopServer" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAACEAAAAEAgAAAAgwIkhAABBIAAABAA0AAM=</HashCode>
+      <FileName>GameServer\GameServer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameStateUpdateEventHandler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGameManager.DaedalusGameManagerConfigurationForm" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DaedalusGameManagerConfigurationForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DaedalusGameManager.GameConfigurationForm" Collapsed="true">
+    <Position X="6.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameConfigurationForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DaedalusGameManager.GameChoice">
+    <Position X="0.5" Y="4" Width="2.75" />
+    <Members>
+      <Field Name="currentGameIndex" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QQAABAAAAAAAgAAAAAgAAAAAAAAAAAAAAAEAAAAAAAI=</HashCode>
+      <FileName>GameChoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DaedalusGameManager.DaedalusConfig">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="portNumber" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAA=</HashCode>
+      <FileName>DaedalusGameManagerConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DaedalusGameManager.DaedalusGameManagerProperties">
+    <Position X="6" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>DaedalusGameManagerConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="DaedalusGameManager.GameServerEventHandlerType" Collapsed="true">
+    <Position X="1.5" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>GameServer\GameServerEventInfo.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

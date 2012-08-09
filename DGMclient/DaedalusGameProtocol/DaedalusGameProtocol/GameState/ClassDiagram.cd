@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="The GameState and BoardState abstract classes are designed to hold information about the state of any particular game.  They are abstract, and must be implemented by each inividual game because they will require game-specific features, while still providing generic interactions.">
+    <Position X="3.611" Y="0.5" Height="2.364" Width="1.596" />
+  </Comment>
+  <Comment CommentText="Generic game over condition codes used to communicate the result of a game to the various software layers, and to the client players.">
+    <Position X="8.106" Y="0.5" Height="1.315" Width="1.383" />
+  </Comment>
+  <Comment CommentText="Codes used to distinguish the clients from each other.">
+    <Position X="7.593" Y="3.439" Height="0.86" Width="1.163" />
+  </Comment>
+  <Comment CommentText="A separated board structure is required to:  (1) allow for a simple initial board state message to be passed to the client player, and (2) allow for the generic loading and saving of simple board states.">
+    <Position X="3.079" Y="3.874" Height="1.48" Width="1.7" />
+  </Comment>
+  <Comment CommentText="If you are interested in implementing your own games, check out the individual game modules, especially the Skeleton game, for examples of how to implement these structures in your own game.">
+    <Position X="0.5" Y="5.428" Height="0.689" Width="4.278" />
+  </Comment>
+  <Class Name="DaedalusGameProtocol.GameState">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Members>
+      <Field Name="gameIsOver" Hidden="true" />
+      <Field Name="gameOverCondition" Hidden="true" />
+      <Method Name="GameState" Hidden="true" />
+      <Field Name="history" Hidden="true" />
+      <Field Name="totalMoveCount" Hidden="true" />
+      <Field Name="winningPlayerNumber" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAgCAAAIAAAACAAAIAEgAAAgAAIEACACIQAgA=</HashCode>
+      <FileName>GameState\GameState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="board" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGameProtocol.GameBoard">
+    <Position X="1.25" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameState\GameBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DaedalusGameProtocol.GamePlayer">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAEAAIA=</HashCode>
+      <FileName>GameState\GamePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DaedalusGameProtocol.GameOverCondition">
+    <Position X="6" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAABAAAgAAAAAAAAAAAAAAAAAAQAAEAgEAAgA=</HashCode>
+      <FileName>GameState\GameOverCondition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TzaarGame.TzaarBoardPosition">
+    <Position X="6" Y="3.25" Width="2.25" />
+    <Members>
+      <Method Name="TzaarBoardPosition" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAEAAAAAAAA=</HashCode>
+      <FileName>GameState\TzaarBoardPosition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="pieces" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TzaarGame.TzaarGameState">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <Members>
+      <Method Name="TzaarGameState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAEgAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>GameState\TzaarGameState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Board" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TzaarGame.TzaarPiece">
+    <Position X="6.25" Y="5.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TzaarGame.TzaarPiece.Tzaar" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarPiece.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TzaarGame.TzaarPiece.Tzarra" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarPiece.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TzaarGame.TzaarPiece.Tott" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarPiece.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>GameState\TzaarPiece.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="color" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TzaarGame.PlayerColor">
+    <Position X="5.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameState\TzaarColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TzaarGame.TzaarBoard">
+    <Position X="1.5" Y="3.25" Width="2.25" />
+    <Members>
+      <Field Name="blackTottCount" Hidden="true" />
+      <Field Name="blackTzaarCount" Hidden="true" />
+      <Field Name="blackTzarraCount" Hidden="true" />
+      <Method Name="RandomizeBoardState" Hidden="true" />
+      <Method Name="TzaarBoard" Hidden="true" />
+      <Method Name="UpdatePieceCount" Hidden="true" />
+      <Field Name="whiteTottCount" Hidden="true" />
+      <Field Name="whiteTzaarCount" Hidden="true" />
+      <Field Name="whiteTzarraCount" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAIAAkAAAABAAAICAABCAAAAQoAAgAqCIAEAQAAAAAI=</HashCode>
+      <FileName>GameState\TzaarBoard.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="board" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="TzaarGame.TzaarColor">
+    <Position X="8.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameState\TzaarColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

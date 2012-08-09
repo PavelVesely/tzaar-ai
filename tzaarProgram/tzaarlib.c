@@ -263,7 +263,16 @@ i32 GetBestMove(i32 ai, i32 time, Move ** move1, Move ** move2, bool recallAI)
 			*move2 = fm->m2;
 			DPRINT("DFPNS: I'm looser :(");
 			value = -WIN;
-			DPRINT2("move 2: f %d t %d", (*move2)->from, (*move2)->to);
+			if (recallAI) {
+				i32 oldVal = value;
+				value = 0;
+				DPRINT("calling alpha-beta:");
+				//call alpha-beta
+				GetBestMove(AIALPHABETA_BEST, time, move1, move2, false);
+				DPRINT("end call alpha-beta");
+				searchDuration += getDurationInSecs(tStart, tID);
+				value = oldVal;
+			}
 		} else {
 			value = 0;
 			if (recallAI) {

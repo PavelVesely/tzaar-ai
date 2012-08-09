@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGameProtocol\DaedalusGameProtocol\bin\Debug\DaedalusGameProtocol.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGameProtocol\DaedalusGameProtocol\bin\Debug\DaedalusGameProtocol.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGameProtocol\DaedalusGameProtocol\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGameProtocol\DaedalusGameProtocol\obj\Debug\DaedalusGameProtocol.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGameProtocol\DaedalusGameProtocol\obj\Debug\DaedalusGameProtocol.pdb

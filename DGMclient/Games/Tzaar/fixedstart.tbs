@@ -1,0 +1,12 @@
+BoardState
+{
+	{BLACK,Tott},{BLACK,Tott},{BLACK,Tott},{BLACK,Tott},{WHITE,Tott},
+	{WHITE,Tott},{BLACK,Tzarra},{BLACK,Tzarra},{BLACK,Tzarra},{WHITE,Tzarra},{WHITE,Tott},
+	{WHITE,Tott},{WHITE,Tzarra},{BLACK,Tzaar},{BLACK,Tzaar},{WHITE,Tzaar},{WHITE,Tzarra},{WHITE,Tott},
+	{WHITE,Tott},{WHITE,Tzarra},{WHITE,Tzaar},{BLACK,Tott},{WHITE,Tott},{WHITE,Tzaar},{WHITE,Tzarra},{WHITE,Tott},
+	{WHITE,Tott},{WHITE,Tzarra},{WHITE,Tzaar},{WHITE,Tott},{BLACK,Tott},{BLACK,Tzaar},{BLACK,Tzarra},{BLACK,Tott},
+	{BLACK,Tott},{BLACK,Tzarra},{BLACK,Tzaar},{BLACK,Tott},{WHITE,Tott},{BLACK,Tzaar},{BLACK,Tzarra},{BLACK,Tott},
+	{BLACK,Tott},{BLACK,Tzarra},{BLACK,Tzaar},{WHITE,Tzaar},{WHITE,Tzaar},{BLACK,Tzarra},{BLACK,Tott},
+	{BLACK,Tott},{BLACK,Tzarra},{WHITE,Tzarra},{WHITE,Tzarra},{WHITE,Tzarra},{BLACK,Tott},
+	{BLACK,Tott},{WHITE,Tott},{WHITE,Tott},{WHITE,Tott},{WHITE,Tott}
+}

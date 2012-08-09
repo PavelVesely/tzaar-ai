@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\DaedalusGUIClient.exe
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\DaedalusGUIClient.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\DaedalusGameProtocol.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\OwariGame.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\TzaarGame.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\DaedalusGameProtocol.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\OwariGame.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\bin\Debug\TzaarGame.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\obj\x86\Debug\DaedalusGUIClient.DaedalusClientForm.resources
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\obj\x86\Debug\DaedalusGUIClient.Properties.Resources.resources
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\obj\x86\Debug\DaedalusGUIClient.exe
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusGUIClient\DaedalusGUIClient\obj\x86\Debug\DaedalusGUIClient.pdb

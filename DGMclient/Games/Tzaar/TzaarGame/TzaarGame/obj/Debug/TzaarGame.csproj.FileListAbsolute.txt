@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\bin\Debug\TzaarGame.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\bin\Debug\TzaarGame.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\bin\Debug\DaedalusGameProtocol.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\bin\Debug\DaedalusGameProtocol.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\obj\Debug\TzaarGame.Properties.Resources.resources
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\obj\Debug\GenerateResource.read.1.tlog
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\obj\Debug\GenerateResource.write.1.tlog
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\obj\Debug\TzaarGame.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\Games\Tzaar\TzaarGame\TzaarGame\obj\Debug\TzaarGame.pdb

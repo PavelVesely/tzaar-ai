@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="Each client connection uses a delegate to notify the network server of new events.">
+    <Position X="4.437" Y="9.26" Height="0.799" Width="1.623" />
+  </Comment>
+  <Comment CommentText="The network server contains logic that is used by both client threads.  The event hub serializes message events to the game server using a lock, an event queue, and a thread.">
+    <Position X="6.105" Y="3.767" Height="1.186" Width="1.887" />
+  </Comment>
+  <Comment CommentText="The network server event hub uses a delegate to notify the game server of new events.">
+    <Position X="3.861" Y="2.193" Height="1.076" Width="1.28" />
+  </Comment>
+  <Comment CommentText="See GameServer class diagram.">
+    <Position X="7.862" Y="0.5" Height="0.54" Width="1.7" />
+  </Comment>
+  <Class Name="DaedalusGameManager.NetworkServerClientConnection">
+    <Position X="0.5" Y="10.75" Width="5" />
+    <Members>
+      <Field Name="actualTcpClient" Hidden="true" />
+      <Method Name="AsynchronousRead" Hidden="true" />
+      <Method Name="BeginAsynchronousRead" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Method Name="NetworkServerClientConnection" Hidden="true" />
+      <Field Name="readBuffer" Hidden="true" />
+      <Field Name="readBufferLen" Hidden="true" />
+      <Field Name="stopped" Hidden="true" />
+      <Method Name="TriggerEvent_Disconnected" Hidden="true" />
+      <Method Name="TriggerEvent_LogMessage" Hidden="true" />
+      <Method Name="TriggerEvent_NewData" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAEgAAAAKACAgAAAAAAAAAAAAIgEAAAACCgA=</HashCode>
+      <FileName>NetworkServer\NetworkServerClientConnection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="clientEventHandler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGameManager.NetworkServer">
+    <Position X="0.5" Y="6.5" Width="12.25" />
+    <Members>
+      <Method Name="ClientEventHandler" Hidden="true" />
+      <Field Name="connectionLock" Hidden="true" />
+      <Method Name="EmergencyStop" Hidden="true" />
+      <Field Name="listener" Hidden="true" />
+      <Method Name="NetworkServer" Hidden="true" />
+      <Method Name="NewTCPConnectionEvent" Hidden="true" />
+      <Field Name="shutDown" Hidden="true" />
+    </Members>
+    <AssociationLine Name="connection1" Type="DaedalusGameManager.NetworkServerClientConnection" FixedFromPoint="true">
+      <Path>
+        <Point X="1.375" Y="7.988" />
+        <Point X="1.375" Y="10.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="connection2" Type="DaedalusGameManager.NetworkServerClientConnection" FixedFromPoint="true">
+      <Path>
+        <Point X="2.625" Y="7.988" />
+        <Point X="2.625" Y="10.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIAAAABAAAACAAAAAAAIAQEIAJIAAAAAAEAAA=</HashCode>
+      <FileName>NetworkServer\NetworkServer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="connection1" />
+      <Field Name="connection2" />
+      <Field Name="eventHub" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGameManager.NetworkServerEventHub">
+    <Position X="2.5" Y="3.75" Width="3.5" />
+    <Members>
+      <Field Name="eventLock" Hidden="true" />
+      <Field Name="eventQ" Hidden="true" />
+      <Field Name="eventThread" Hidden="true" />
+      <Method Name="EventThreadCode" Hidden="true" />
+      <Method Name="NetworkServerEventHub" Hidden="true" />
+      <Method Name="QueueEvent" Hidden="true" />
+      <Field Name="stopEventThread" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAECAhAICAAAAAAAAAAAAAAAAAAAgAJAIAAAAAACCgA=</HashCode>
+      <FileName>NetworkServer\NetworkServerEventHub.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="eventCallback" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGameManager.GameServer" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAACEAAAAEAgAAAAgwIkhAABBIAAABAA0AAM=</HashCode>
+      <FileName>GameServer\GameServer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="server" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="DaedalusGameManager.NetworkServerEventInfo">
+    <Position X="5.25" Y="1.25" Width="2.75" />
+    <Members>
+      <Field Name="clientId" Hidden="true" />
+      <Field Name="message" Hidden="true" />
+      <Method Name="NetworkServerEventInfo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAgAAAAIAAAAAAAgAAAIAAAACA=</HashCode>
+      <FileName>NetworkServer\NetworkServerEventInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="code" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="DaedalusGameManager.NetworkServerClientEventInfo">
+    <Position X="6.25" Y="8.25" Width="3" />
+    <Members>
+      <Field Name="client" Hidden="true" />
+      <Field Name="message" Hidden="true" />
+      <Method Name="NetworkServerClientEventInfo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAJAAAACQ=</HashCode>
+      <FileName>NetworkServer\NetworkServerClientEventInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="code" />
+      <Field Name="client" />
+    </ShowAsAssociation>
+  </Struct>
+  <Enum Name="DaedalusGameManager.NetworkServerEventInfoCode">
+    <Position X="8.75" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAQAAAAAAAABAAAIAEgAAA=</HashCode>
+      <FileName>NetworkServer\NetworkServerEventInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DaedalusGameManager.NetworkServerClientEventInfoCode">
+    <Position X="10" Y="8.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEgAAA=</HashCode>
+      <FileName>NetworkServer\NetworkServerClientEventInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="DaedalusGameManager.NetworkServerClientEventHandlerType">
+    <Position X="3" Y="8.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NetworkServer\NetworkServerClientEventInfo.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="DaedalusGameManager.NetworkServerEventHandlerType">
+    <Position X="2.5" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>NetworkServer\NetworkServerEventInfo.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

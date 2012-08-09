@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TzaarGame.TzaarMessage">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TzaarGame.TzaarMessage.BoardState">
+        <Members>
+          <Field Name="board" Hidden="true" />
+          <Method Name="BoardState" Hidden="true" />
+          <Method Name="GetBoardStateFromString" Hidden="true" />
+          <Method Name="GetStringFromBoardState" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarMessage.BoardState.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TzaarGame.TzaarMessage.Move">
+        <Members>
+          <Field Name="fromCol" Hidden="true" />
+          <Field Name="fromRow" Hidden="true" />
+          <Field Name="isPass" Hidden="true" />
+          <Method Name="Move" Hidden="true" />
+          <Field Name="toCol" Hidden="true" />
+          <Field Name="toRow" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarMessage.Move.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMessage\TzaarMessage.BoardState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

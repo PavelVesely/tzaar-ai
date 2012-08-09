@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusTextClient\C#\DaedalusTextClient\bin\Debug\DaedalusTextClient.exe
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusTextClient\C#\DaedalusTextClient\bin\Debug\DaedalusTextClient.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusTextClient\C#\DaedalusTextClient\bin\Debug\DaedalusGameProtocol.dll
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusTextClient\C#\DaedalusTextClient\bin\Debug\DaedalusGameProtocol.pdb
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusTextClient\C#\DaedalusTextClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusTextClient\C#\DaedalusTextClient\obj\x86\Debug\DaedalusTextClient.exe
+C:\Program Files (x86)\Daedalus Game Manager\src\daedalus-game-manager-read-only\DaedalusTextClient\C#\DaedalusTextClient\obj\x86\Debug\DaedalusTextClient.pdb
+C:\Pavel\prog\tzaar\DaedalusTextClient\DaedalusTextClient\obj\x86\Debug\DaedalusTextClient.exe
+C:\Pavel\prog\tzaar\DaedalusTextClient\DaedalusTextClient\obj\x86\Debug\DaedalusTextClient.pdb
+C:\Pavel\prog\tzaar\DaedalusTextClient\DaedalusTextClient\bin\Debug\DaedalusTextClient.exe
+C:\Pavel\prog\tzaar\DaedalusTextClient\DaedalusTextClient\bin\Debug\DaedalusTextClient.pdb
+C:\Pavel\prog\tzaar\DaedalusTextClient\DaedalusTextClient\bin\Debug\DaedalusGameProtocol.dll
+C:\Pavel\prog\tzaar\DaedalusTextClient\DaedalusTextClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Pavel\prog\tzaar\DaedalusTextClient\DaedalusTextClient\bin\Debug\DaedalusGameProtocol.pdb

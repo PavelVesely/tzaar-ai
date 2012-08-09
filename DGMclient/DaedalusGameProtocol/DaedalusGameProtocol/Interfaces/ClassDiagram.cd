@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="The Game Manager Interface">
+    <Position X="0.5" Y="1.25" Height="0.415" Width="5.018" />
+  </Comment>
+  <Comment CommentText="The configuration interface is optionally implemented in conjunction with IGame, and allows game-specific configuration.">
+    <Position X="3.134" Y="6.745" Height="1.788" Width="1.518" />
+  </Comment>
+  <Comment CommentText="The game logic represents a game instance.  It is used to track the progress of a game.">
+    <Position X="2.872" Y="4.258" Height="1.971" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The painter instance is created around a PictureBox, and provides a single method Draw(), which takes a game state as a parameter and renders that state within the box.">
+    <Position X="7.343" Y="4.247" Height="1.647" Width="1.557" />
+  </Comment>
+  <Comment CommentText="The game interface is the main access point for game modules to hook in to the Daedalus Game Manager.  It is primarily a 'factory' for instances of game-specific logic.">
+    <Position X="5.628" Y="1.25" Height="2.348" Width="2.113" />
+  </Comment>
+  <Comment CommentText="The Client Interface (Optional)">
+    <Position X="8.491" Y="0.5" Height="0.401" Width="3.172" />
+  </Comment>
+  <Comment CommentText="If you are interested in implementing your own games, check out the individual game modules, especially the Skeleton game, for examples of how to implement these interfaces in your own game.">
+    <Position X="0.5" Y="0.5" Height="0.45" Width="5.967" />
+  </Comment>
+  <Comment CommentText="The Game Logic Interface">
+    <Position X="0.502" Y="4.261" Height="0.415" Width="2.249" />
+  </Comment>
+  <Comment CommentText="The Game Painter Interface">
+    <Position X="5.25" Y="4.25" Height="0.415" Width="1.995" />
+  </Comment>
+  <Comment CommentText="The Game Config Interface (Optional)">
+    <Position X="0.508" Y="6.745" Height="0.415" Width="2.486" />
+  </Comment>
+  <Comment CommentText="The Game Client Logic Interface (Optional)">
+    <Position X="9.25" Y="3.187" Height="0.479" Width="2.249" />
+  </Comment>
+  <Comment CommentText="The game client interface is the main access point for game modules to hook in to the Daedalus GUI Client.  It is primarily a 'factory' for instances of game-specific client logic.">
+    <Position X="11.891" Y="0.5" Height="2.168" Width="1.772" />
+  </Comment>
+  <Comment CommentText="The client logic represents a game instance.  It is used by the GUI Client to locally track the progress of the game.">
+    <Position X="11.574" Y="3.198" Height="2.451" Width="1.652" />
+  </Comment>
+  <Comment CommentText="The Control Interface (Optional)">
+    <Position X="5.281" Y="6.542" Height="0.385" Width="2.169" />
+  </Comment>
+  <Comment CommentText="The Control interface is optionally implemented in conjunction with IGameLogic, to provide support for the Control GameMessage.   It allows Control messages to be handled directly by the game logic, bypassing the server.  The logic uses the callback delegate to send data to either client in response to a Control message.">
+    <Position X="7.583" Y="6.552" Height="2.687" Width="1.867" />
+  </Comment>
+  <Interface Name="DaedalusGameProtocol.IGame">
+    <Position X="0.5" Y="1.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Interfaces\IGame.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DaedalusGameProtocol.IGameLogic">
+    <Position X="0.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAgAAAAAAAACAAAA=</HashCode>
+      <FileName>Interfaces\IGameLogic.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DaedalusGameProtocol.IGamePainter">
+    <Position X="5.25" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IGamePainter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DaedalusGameProtocol.IGameConfig">
+    <Position X="0.5" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IGameConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DaedalusGameProtocol.IGameClient">
+    <Position X="8.5" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAgAAAAAAAAIA=</HashCode>
+      <FileName>Interfaces\IGameClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DaedalusGameProtocol.IGameClientLogic">
+    <Position X="9.25" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAAAAAYEAA=</HashCode>
+      <FileName>Interfaces\IGameClientLogic.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DaedalusGameProtocol.Interfaces.IGameControl">
+    <Position X="5.25" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IGameControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="DaedalusGameProtocol.Interfaces.ControlCallbackDelegate">
+    <Position X="5.25" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IGameControl.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -95,7 +95,6 @@ FullMove *dfpns(u32 depth, u32 tpn, u32 tdn)
 	Move *move, *move2, *curr, *curr2, *tmp;
 	Move *maxLooseMove1 = null, *maxLooseMove2 = null;	// for counting the best move in lost position
 	GenerateAllMovesSorted(&move);
-	int currVal = materialValue + StaticValue();
 	while (1) {
 		curr = move;
 		Move *minPNm1 = null, *minPNm2 = null;
@@ -278,7 +277,6 @@ FullMove *dfpnsEpsTrick(u32 depth, u32 tpn, u32 tdn)
 	Move *move, *move2, *curr, *curr2, *tmp;
 	Move *maxLooseMove1 = null, *maxLooseMove2 = null;	// for counting the best move in lost position
 	GenerateAllMovesSorted(&move);
-	int currVal = materialValue + StaticValue();
 	while (1) {
 		curr = move;
 		Move *minPNm1 = null, *minPNm2 = null;
@@ -656,7 +654,6 @@ FullMove *dfpnsEvalBased(u32 depth, u32 tpn, u32 tdn)
 	Move *move, *move2, *curr, *curr2, *tmp;
 	Move *maxLooseMove1 = null, *maxLooseMove2 = null;	// for counting the best move in lost position
 	GenerateAllMovesSorted(&move);
-	int currVal = materialValue + StaticValue();
 	while (1) {
 		curr = move;
 		Move *minPNm1 = null, *minPNm2 = null;
@@ -1051,7 +1048,6 @@ FullMove *dfpnsDynWideningEpsEval(u32 depth, u32 tpn, u32 tdn)
 	Move *maxLooseMove1 = null, *maxLooseMove2 = null;	// for counting the best move in lost position
 	u32 maxDNArray[DWPNS_J + 1], minPNArray[DWPNS_J + 1];
 	GenerateAllMovesSorted(&move);
-	int currVal = materialValue + StaticValue();
 	while (1) {
 		curr = move;
 		Move *minPNm1 = null, *minPNm2 = null;

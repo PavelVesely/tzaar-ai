@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="The board map encapsulates the complexity of dealing with the board connections, i.e. which positions connect to one another (directly or along a straight path).   The IsValidPath method takes the coordinates of two board positions as parameters, and return true if a valid path exists between them.">
+    <Position X="6.104" Y="3.344" Height="1.698" Width="2.169" />
+  </Comment>
+  <Class Name="TzaarGame.TzaarBoardMap">
+    <Position X="4.25" Y="3.75" Width="1.75" />
+    <Members>
+      <Method Name="CreateCenterBoardLinks" Hidden="true" />
+      <Method Name="CreateLeftBoardLinks" Hidden="true" />
+      <Method Name="CreateNorthAndSouthNodeLinks" Hidden="true" />
+      <Method Name="CreateRightBoardLinks" Hidden="true" />
+      <Method Name="ExplorePath" Hidden="true" />
+      <Field Name="paths" Hidden="true" />
+      <Method Name="SetupBoardPaths" Hidden="true" />
+      <Method Name="TzaarBoardMap" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="TzaarGame.TzaarBoardMap.Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarBoardMap.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAIABAQAAAAAAAACCBAAAAQAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>TzaarBoardMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TzaarGame.TzaarGameInterface">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>TzaarGameInterface.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TzaarGame.TzaarLogic">
+    <Position X="4.75" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="Capture" Hidden="true" />
+      <Method Name="FooCanCapture" Hidden="true" />
+      <Method Name="Pass" Hidden="true" />
+      <Method Name="Stack" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Method Name="TzaarLogic" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAIQAAAAAQAAAAAIggAAAAgAEABAAAACCQAI=</HashCode>
+      <FileName>TzaarLogic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="boardMap" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TzaarGame.TzaarPainter">
+    <Position X="9.25" Y="0.5" Width="3" />
+    <Members>
+      <Method Name="DrawGameOver" Hidden="true" />
+      <Method Name="DrawPiece" Hidden="true" />
+      <Method Name="DrawStack" Hidden="true" />
+      <Method Name="pictureBox1_Resize" Hidden="true" />
+      <Method Name="TzaarPainter" Hidden="true" />
+      <Method Name="UpdateScalingInfo" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="TzaarGame.TzaarPainter.BackgroundImageSizeInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarPainter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TzaarGame.TzaarPainter.PieceImageSizeInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarPainter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TzaarGame.TzaarPainter._CurrentImageInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TzaarPainter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAAABAAAgAQAAgEgAAAAAAAAAQAAAAEAAAAxAABAAAA=</HashCode>
+      <FileName>TzaarPainter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TzaarGame.Properties.Resources">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <Members>
+      <Property Name="Culture" Hidden="true" />
+      <Field Name="resourceCulture" Hidden="true" />
+      <Field Name="resourceMan" Hidden="true" />
+      <Property Name="ResourceManager" Hidden="true" />
+      <Method Name="Resources" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQBEAAAAAAAAAAAAAAABEAAABQAACEAIAAAAAIAEAIg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

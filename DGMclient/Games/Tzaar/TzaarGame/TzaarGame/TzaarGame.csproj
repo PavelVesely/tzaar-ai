@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E75C24D3-37D3-415D-8046-8CC3346803A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TzaarGame</RootNamespace>
+    <AssemblyName>TzaarGame</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\TzaarClientInterface.cs" />
+    <Compile Include="Client\TzaarClientLogic.cs" />
+    <Compile Include="Client\TzaarClientPainter.cs" />
+    <Compile Include="GameState\TzaarColor.cs" />
+    <Compile Include="GameState\TzaarBoardPosition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameState\TzaarBoard.cs" />
+    <Compile Include="TzaarBoardMap.cs" />
+    <Compile Include="TzaarGameInterface.cs" />
+    <Compile Include="TzaarLogic.cs" />
+    <Compile Include="GameState\TzaarGameState.cs" />
+    <Compile Include="GameMessage\TzaarMessage.BoardState.cs" />
+    <Compile Include="GameMessage\TzaarMessage.Move.cs" />
+    <Compile Include="TzaarPainter.cs" />
+    <Compile Include="GameState\TzaarPiece.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Client\ClassDiagram.cd" />
+    <None Include="GameMessage\ClassDiagram.cd" />
+    <None Include="GameState\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Black.png" />
+    <Content Include="Resources\BlackTott.png" />
+    <Content Include="Resources\BlackTzaar.png" />
+    <Content Include="Resources\BlackTzarra.png" />
+    <Content Include="Resources\GreenTzaarBoard.jpg" />
+    <Content Include="Resources\PassButton.png" />
+    <Content Include="Resources\YourColor.png" />
+    <Content Include="Resources\White.png" />
+    <Content Include="Resources\WhiteTott.png" />
+    <Content Include="Resources\WhiteTzaar.png" />
+    <Content Include="Resources\WhiteTzarra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DaedalusGameProtocol\DaedalusGameProtocol\DaedalusGameProtocol.csproj">
+      <Project>{65D12FC4-94B3-43D8-A809-C826C5AB51D1}</Project>
+      <Name>DaedalusGameProtocol</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

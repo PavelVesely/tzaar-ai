@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="The client itself connects to a game manager and handles the exchange of data between the client form and the server.">
+    <Position X="5.085" Y="5.768" Height="1.15" Width="1.424" />
+  </Comment>
+  <Comment CommentText="The client class uses a pair of callback delagates to notify the client form of new events, i.e. connections, disconnections, and new data.">
+    <Position X="6.569" Y="4.266" Height="0.998" Width="2.003" />
+  </Comment>
+  <Comment CommentText="The Daedalus logo... a brand you can trust!">
+    <Position X="7.53" Y="5.963" Height="0.502" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The client state code helps the client track what step in program execution is currently taking place.">
+    <Position X="3.094" Y="0.5" Height="1.026" Width="1.411" />
+  </Comment>
+  <Comment CommentText="The client logic represents a game instance.  It is used to locally track the progress of the game.">
+    <Position X="8.064" Y="0.5" Height="0.846" Width="1.652" />
+  </Comment>
+  <Comment CommentText="The game client interface is the main access point for game modules to hook in.  It is primarily a 'factory' for instances of game-specific client logic.">
+    <Position X="5.058" Y="1.634" Height="1.282" Width="1.772" />
+  </Comment>
+  <Comment CommentText="The client form handles user interaction, tracks the game progress, forwards game states to the display (painter), and handles communication with the remote game manager.">
+    <Position X="7.585" Y="2.723" Height="1.145" Width="2.095" />
+  </Comment>
+  <Class Name="DaedalusGUIClient.DaedalusClient">
+    <Position X="0.5" Y="5.75" Width="4.5" />
+    <Members>
+      <Field Name="client" Hidden="true" />
+      <Field Name="connected" Hidden="true" />
+      <Field Name="connecting" Hidden="true" />
+      <Field Name="host" Hidden="true" />
+      <Field Name="locker" Hidden="true" />
+      <Method Name="NewTCPConnectionEvent" Hidden="true" />
+      <Field Name="ns" Hidden="true" />
+      <Field Name="port" Hidden="true" />
+      <Field Name="readBuffer" Hidden="true" />
+      <Method Name="ReadCallbackHandler" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQACCBAAAgAYAACACAAAoAAAAAQAAgAgAgABAAAQAA=</HashCode>
+      <FileName>DaedalusClient.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="newMessageCallback" />
+      <Field Name="connectedCallback" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGUIClient.DaedalusClientForm" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="7" />
+    <TypeIdentifier>
+      <HashCode>AAAAsAAAEiAAoBAAQgSAIYhCAACIATAQADAIBIFQAoA=</HashCode>
+      <FileName>DaedalusClientForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="stateCode" />
+      <Field Name="client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DaedalusGUIClient.Properties.Resources">
+    <Position X="7.25" Y="6.5" Width="2.25" />
+    <Members>
+      <Property Name="Culture" Hidden="true" />
+      <Field Name="resourceCulture" Hidden="true" />
+      <Field Name="resourceMan" Hidden="true" />
+      <Property Name="ResourceManager" Hidden="true" />
+      <Method Name="Resources" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DaedalusGameProtocol.IGameClientLogic" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="DaedalusGameProtocol.IGameClient" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="DaedalusGUIClient.ClientStateCode">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQAIAAAAgCAAAAAIAAAAAAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>DaedalusClientForm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="DaedalusGUIClient.DaedalusClient_ConnectCallback" Collapsed="true">
+    <Position X="1" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DaedalusClient.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="DaedalusGUIClient.DaedalusClient_NewMessageCallback">
+    <Position X="3.75" Y="4" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DaedalusClient.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

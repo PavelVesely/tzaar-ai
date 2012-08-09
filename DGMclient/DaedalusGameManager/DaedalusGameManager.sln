@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaedalusGameManager", "DaedalusGameManager\DaedalusGameManager.csproj", "{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaedalusGameProtocol", "..\DaedalusGameProtocol\DaedalusGameProtocol\DaedalusGameProtocol.csproj", "{65D12FC4-94B3-43D8-A809-C826C5AB51D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TzaarGame", "..\Games\Tzaar\TzaarGame\TzaarGame\TzaarGame.csproj", "{E75C24D3-37D3-415D-8046-8CC3346803A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game Modules", "Game Modules", "{8BCFF4B5-D263-4616-A6C1-95988ED15EDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Debug|x86.ActiveCfg = Debug|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Debug|x86.Build.0 = Debug|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Release|Any CPU.ActiveCfg = Release|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Release|x86.ActiveCfg = Release|x86
+		{F7243EDA-E9B5-478D-97B3-8FA6E1E084F3}.Release|x86.Build.0 = Release|x86
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{65D12FC4-94B3-43D8-A809-C826C5AB51D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E75C24D3-37D3-415D-8046-8CC3346803A2}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E75C24D3-37D3-415D-8046-8CC3346803A2} = {8BCFF4B5-D263-4616-A6C1-95988ED15EDB}
+	EndGlobalSection
+EndGlobal

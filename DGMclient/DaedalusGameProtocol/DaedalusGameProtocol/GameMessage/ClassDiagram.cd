@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="GameMessage is an abstract class that implements the game's messaging protocol.  It contains a set of subclasses: one for each type of game message.">
+    <Position X="3.396" Y="0.5" Height="0.974" Width="2.085" />
+  </Comment>
+  <Comment CommentText="Each subclass is capable of taking a simple string as a parameter to its constructor, which is then parsed.  Alternatively, each class can be constructed using parameters to specify the message contents, e.g. the BoardState constructor takes a GameBoard as its parameter.">
+    <Position X="3.405" Y="1.542" Height="1.271" Width="2.668" />
+  </Comment>
+  <Comment CommentText="The message class provides an implicit string conversion. So, if you use an instance of a GameMessage class in place of a string parameter, it performs the conversion automatically.">
+    <Position X="3.416" Y="7.354" Height="1.125" Width="2.221" />
+  </Comment>
+  <Comment CommentText="Three of the message subclasses are abstract, and must be implemented by each game, i.e., the BoardState, Move, and Control messages.">
+    <Position X="3.417" Y="2.896" Height="0.812" Width="2.294" />
+  </Comment>
+  <Comment CommentText="See the Daedalus Game Protocol documentation for more information.  If you are interested in implementing your own games, check out the individual game modules, especially the Skeleton game, for examples of how to implement these messages in your own game.">
+    <Position X="3.427" Y="10.792" Height="1.823" Width="1.846" />
+  </Comment>
+  <Comment CommentText="The GameMessage class also provides a few convenience functions like GetMessageData (which returns the payload of a generic message), and also provides operations to determine the subclass of a newly received game message string (i.e., IsBoardState, IsChat, etc.)  ">
+    <Position X="3.417" Y="5.625" Height="1.531" Width="2.377" />
+  </Comment>
+  <Class Name="DaedalusGameProtocol.GameMessage">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="data" Hidden="true" />
+      <Method Name="GetMessageType" Hidden="true" />
+      <Method Name="IsType" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="DaedalusGameProtocol.GameMessage.Chat">
+        <Members>
+          <Method Name="Chat" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.Chat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DaedalusGameProtocol.GameMessage.Move" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.Move.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DaedalusGameProtocol.GameMessage.Control" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DaedalusGameProtocol.GameMessage.BoardState">
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.BoardState.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DaedalusGameProtocol.GameMessage.GameOver">
+        <Members>
+          <Field Name="condition" Hidden="true" />
+          <Method Name="GameOver" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.GameOver.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DaedalusGameProtocol.GameMessage.Version">
+        <Members>
+          <Field Name="gameConfig" Hidden="true" />
+          <Field Name="gameName" Hidden="true" />
+          <Field Name="gameVersion" Hidden="true" />
+          <Field Name="managerVersion" Hidden="true" />
+          <Method Name="Version" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.Version.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DaedalusGameProtocol.GameMessage.YourPlayerNumber">
+        <Members>
+          <Field Name="playerNumber" Hidden="true" />
+          <Method Name="YourPlayerNumber" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.YourPlayerNumber.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DaedalusGameProtocol.GameMessage.YourTurn" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameMessage.YourTurn.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAIAAAQEAAKEAAABACAQAEAAAAAYAACAAAA=</HashCode>
+      <FileName>GameMessage\GameMessage.Chat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

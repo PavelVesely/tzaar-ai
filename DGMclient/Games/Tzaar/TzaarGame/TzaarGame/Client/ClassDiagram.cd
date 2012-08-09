@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TzaarGame.TzaarClientInterface" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAgAAAAAAAAIA=</HashCode>
+      <FileName>Client\TzaarClientInterface.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TzaarGame.TzaarClientPainter">
+    <Position X="5" Y="4" Width="2.25" />
+    <Members>
+      <Field Name="aPositionIsSelected" Hidden="true" />
+      <Method Name="ApplyScaleToRec" Hidden="true" />
+      <Field Name="blackLogoRec" Hidden="true" />
+      <Method Name="DrawLogo" Hidden="true" />
+      <Method Name="DrawPassButton" Hidden="true" />
+      <Field Name="enableColorLogo" Hidden="true" />
+      <Method Name="HighlightPosition" Hidden="true" />
+      <Field Name="myColor" Hidden="true" />
+      <Field Name="passButtonEnabled" Hidden="true" />
+      <Field Name="passButtonRec" Hidden="true" />
+      <Field Name="selectionCol" Hidden="true" />
+      <Field Name="selectionRow" Hidden="true" />
+      <Method Name="TzaarClientPainter" Hidden="true" />
+      <Field Name="whiteLogoRec" Hidden="true" />
+      <Field Name="yourColorLogoRec" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAASAKCAAAIgAIACAMAgACCIAAIIAAAAEAACAAAgA=</HashCode>
+      <FileName>Client\TzaarClientPainter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TzaarGame.TzaarClientLogic" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="0.5" Width="3.25" />
+    <Members>
+      <Field Name="fromPoint" Hidden="true" />
+      <Field Name="gameInProgress" Hidden="true" />
+      <Field Name="logic" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Field Name="playerNumber" Hidden="true" />
+      <Method Name="TzaarClientLogic" Hidden="true" />
+      <Field Name="versionMsg" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAACAAAAQAAAAAAIoACAAAAAAgBAAAAB4EII=</HashCode>
+      <FileName>Client\TzaarClientLogic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="painter" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
